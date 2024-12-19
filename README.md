@@ -1,1 +1,1 @@
-https://github.com/kyjumoshi/ono-tebe-nado
+https://github.com/kyjumoshi/ono-tebe-nado-fd
