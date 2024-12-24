@@ -227,7 +227,7 @@ text-transform: uppercase;
   flex-direction: column-reverse;
 }
 
-.card-link{
+.card-link {
   text-decoration: none;
 }
 /*
@@ -358,14 +358,13 @@ text-transform: uppercase;
 
 }
 
-.address__link{
+.address__link {
   font-family: Raleway;
   font-size: 18px;
   line-height: 24.3px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  font-family: Raleway;
   font-weight: 400;
 }
 
