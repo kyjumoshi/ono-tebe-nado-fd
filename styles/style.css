@@ -7,22 +7,23 @@ address {
   grid-template-columns: 1fr 148px 1fr;
   place-items: center start;
   width: 100%;
-  padding: 92px 50px;
+  margin: 92px 0px;
   background-color: #fff;
+  justify-items: center;
 }
 
 .header_link-list {
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  width: 400px;
-  height: 22px;
+  gap: 20px;
   font-weight: 400;
   font-size: 18px;
   font-family: Raleway, sans-serif;
   line-height: 21.13px;
-  white-space: nowrap;
   color: #000000;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 10px;
 }
 
 .header__links-list-item_no-bullit {
@@ -38,22 +39,23 @@ address {
   list-style: circle;
 }
 
-.logo-image {
-  width: 148;
-  height: 105;
+.logo {
+  width: 135px;
+  height: 105px;
 }
 
 .contact-information {
   display: flex;
-  flex-direction: column;
-  padding-left: 200px;
   font-weight: 400;
   font-size: 18px;
+  gap: 5px;
   font-family: Raleway, sans-serif;
   color: #000000;
-  width: 100%;
+  width: 240px;
+  flex-direction: column;
+  margin-left: 138px;
+  margin-bottom: 8px;
 }
-/*
 .overlay {
   position: absolute;
   z-index: 0;
@@ -61,10 +63,10 @@ address {
   background-color: #000000;
   width: 100%;
   height: 100%;
-  margin-left: -50px;
-  margin-top: -15px;
+  left: 0;
+  top: 0;
 }
-*/
+
 .cover {
   background-image: url(../images/cover.jpg);
   background-size: cover;
@@ -79,38 +81,31 @@ address {
 }
 
 .cover_content {
-  position: relative;
-  margin-top: 200px;
+  margin-top: 175px;
   z-index: 1;
 }
 
 .align-text {
   display: block;
-  margin-left: 30px;
   position: relative;
-  bottom: 55px;
-  left: -30px;
+  bottom: 25px;
 }
 
 .align-text_center {
   text-align: center;
   line-height: 1;
-  margin-left: -10px;
-  margin-top: 20px;
   position: relative;
-  bottom: 50px;
-  left: 10px;
+  top: 2px;
+  left: 15px;
 }
 
 .align-text_right {
   text-align: right;
   line-height: 1;
-  letter-spacing: 60px;
-  margin-right: 10px;
-  margin-top: 20px;
+  letter-spacing: 30px;
   position: relative;
-  bottom: 40px;
-  left: 45px;
+  top: 37px;
+  left: 30px;
 }
 
 .cover_title {
@@ -122,7 +117,7 @@ address {
 }
 
 .letter-spacing {
-  letter-spacing: 60px;
+  letter-spacing: 30px;
 }
 
 .no-letter-spacing {
@@ -146,7 +141,9 @@ address {
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
-  margin-top: -135px;
+  position: relative;
+  bottom: 50px;
+  right: 10px;
 }
 
 .cover_describe-button {
@@ -161,40 +158,41 @@ address {
   color: #fff;
   width: 256px;
   height: 51px;
-  margin-top: -135px;
+  position: relative;
+  bottom: 50px;
+  left: 7px;
 }
 
 .lots {
   margin: 180px 24px 120px 24px;
   width: 1052px;
-  height: 723px;
 }
 
 .lots__heading {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
   text-align: left;
-  margin: 0px 173px 27px 40px;
+  margin: 0px 173px 0px 40px;
   text-transform: uppercase;
 }
 
 .card {
-  width: 334px;
-  height: 596px;
-  margin: 27px 24px 30px 24px;
+  width: 100%;
+  height: 100%;
+  margin: 27px 24px 27px 24px;
   background-position: center;
   background-size: 171%;
   z-index: -1;
-  padding: 48px 40px 48px 40px;
+  padding: 48px 40px 47px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .card__title {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 26.4px;
@@ -206,11 +204,11 @@ address {
   color: #fff;
   position: relative;
   z-index: 1;
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .card__text {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -225,35 +223,19 @@ text-transform: uppercase;
   height: 100%;
   width: 254px;
   flex-direction: column-reverse;
+  margin-top: 35px;
 }
 
 .card-link {
   text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
-/*
-.card__text-film {
-  width: 254px;
-  height: 144px;
-  margin: 255px 40px 48px 40px;
-}
-
-.card__text-book {
-  width: 254px;
-  height: 360px;
-  margin: 30px 40px 48px 40px;
-}
-
-.card__text-picture {
-  width: 254px;
-  height: 264px;
-  margin: 126px 40px 48px 40px;
-}
-*/
 .lots__card-list {
   display: grid;
   grid-template-columns: repeat(3, 334px);
-  grid-template-rows: 596px;
-  margin: 74px 24px 53px 24px;
+  margin: 0px 24px 6px 24px;
   gap: 25px;
   justify-content: end;
   align-items: end;
@@ -263,46 +245,46 @@ text-transform: uppercase;
 .lots__card-list-item {
   list-style: none;
   width: 334px;
-  height: 596px;
-  margin: 74px 53px;
+  min-height: 596px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(../images/card-lot-02.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(../images/card-lot-03.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url(../images/card-lot-03.jpg);
 }
 
 .lots__look-more-link {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 23.48px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  border: 1px 0px 0px 0px;
   margin: 30px 102px 2px 40px;
 }
 
 .about {
   width: 1052px;
-  height: 595px;
-  margin: 120px 24px 180px 24px;
+  margin: 120px 24px 169px 24px;
 }
 
 .about__column {
   display: grid;
   grid-template-columns: 334px 693px;
-  grid-template-rows: 240px 168px 168px;
   align-items: center;
-  padding-top: 120px;
 }
 
 .about__logo {
@@ -310,7 +292,8 @@ text-transform: uppercase;
   height: 240px;
   border-radius: 50%;
   background: #000000;
-  margin: auto;
+  margin-top: 32px;
+  margin-left: 48px;
 }
 
 .about__logo-image {
@@ -322,44 +305,37 @@ text-transform: uppercase;
 }
 
 .about__title {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 40px;
   font-weight: 700;
-  line-height: 46.96px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #000000;
+  padding-left: 25px;
+  padding-top: 40px;
 }
 .about__text {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   grid-column-start: 2;
+  padding: 10px 31px 12px 25px;
 }
 
 .footer {
-  width: 1100px;
-  height: 180px;
   display: flex;
-  justify-content: space-around;
-  align-items: start;
-  padding: 180px 24px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .contact-information-footer {
-  width: 264.57px;
-  height: 98px;
+  max-width: 264.57px;
   display: grid;
-
 }
 
 .address__link {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 24.3px;
   text-align: left;
@@ -368,26 +344,15 @@ text-transform: uppercase;
   font-weight: 400;
 }
 
-.footer__menu {
-  width: 163.9px;
-  height: 64px;
-}
-
 .footer__menu-list {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.13px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  width: 163.9px;
-  height: 64px;
-  top: 1px;
-  left: 468.6px;
-  gap: 0px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
+  padding-right: 23px;
 }
 
 .footer__menu-list-item {
@@ -399,15 +364,12 @@ text-transform: uppercase;
 }
 
 .footer__social-list {
-  width: Fixed (240px)px;
-height: Hug (48px)px;
-list-style: none;
-display: flex;
-gap: 48px;
+  list-style: none;
+  display: flex;
+  gap: 48px;
 }
 
 .footer__social-icon {
   width: 48px;
   height: 48px;
-  border: 1px 0px 0px 0px;
 }
